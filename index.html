@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ERP Dashboard</title>
+</head>
+
+<body>
+
+    <!-- sideBar starts -->
+    <div class="sideBar">
+
+        <div class="menu-bars">
+            <i class='bx bx-menu menu-icon' id="btn"></i>
+        </div>
+
+        <!-- visible -->
+        <ul class="nav-list">
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-calendar'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-book'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-trash-alt'></i>
+                </a>
+            </li>
+        </ul>
+
+        <!-- hidden -->
+        <div class="nav">
+        <div class="sidebar-hid">
+            <div class="logo">
+                <i class="bx bx-menu menu-icon"></i>
+            </div>
+
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <span class="link">Device Management</span>
+                            <i class="bx bxs-down-arrow icon"></i>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <span class="link">Device Management</span>
+                            <i class="bx bxs-down-arrow icon"></i>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <span class="link">Device Management</span>
+                            <i class="bx bxs-down-arrow icon"></i>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <span class="link">Device Management</span>
+                            <i class="bx bxs-down-arrow icon"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- sideBar ends -->
+
+    <!-- topbar starts -->
+
+    <header>
+
+        <div class="header-content" id="header-content">
+
+            <label for="menu-toggle">
+                <span class="bx bx-bars"></span>
+            </label>
+
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="bx bx-search"></label>
+            </div>
+
+            <div class="header-menu">
+
+                <div class="notify-icon email">
+                    <span class="bx bx-envelope"></span>
+                    <span class="notify">4</span>
+                </div>
+
+                <div class="notify-icon notify">
+                    <span class="bx bx-bell"></span>
+                    <span class="notify">3</span>
+                </div>
+
+                <div class="user">
+                    <span class="bx bx-log-out"></span>
+                    <span class="name">&nbsp; Logout</span>
+                </div>
+
+                <div class="menu">
+                    <span class="bx bx-list-check"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="menu-right" id="menu-right" onclick="myFunction()">
+            <i class='bx bx-menu-alt-right' id="btn"></i>
+        </div>
+    </header>
+
+    <!-- topbar ends -->
+
+    <!-- home section starts -->
+
+    <section class="main">
+        <div class="buttonBar">
+            <button class="btn">Roll Back</button>
+            <button class="btn">check SIM validity</button>
+            <!-- <div class="check">
+
+            </div> -->
+        </div>
+
+        <div class="sims">
+            <!-- Sims  -->
+            <div class="heading">
+                <h2>E-SIMs</h3>
+            </div>
+
+            <div class="boxes">
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Total E-SIM Count 1.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Total e-SIMs</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Allocated SIMS 2.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Allocated e-SIMs to <br> OEM Manufactures</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Allocated SIMS 3.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Allocated e-SIMs <br> to technical team</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Balance E-sim Icon 2.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Balance e-SIMs</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- users -->
+            <div class="heading">
+                <h2>Users</h3>
+            </div>
+
+            <div class="boxes">
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Asset 44 1.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Associate <br> Channel Partners</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Asset 43 2.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">OEM Manufacturers</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Technicians 1.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Distributors</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Dealers 1.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Dealers</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Customers 1.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Customers</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Distributors 1.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">technicians</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Devices -->
+            <div class="heading">
+                <h2>Devices</h3>
+            </div>
+
+            <div class="boxes">
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Asset 45 1.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Total Devices</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Asset 47 1.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Allocated <br> Devices to Dealers</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/images/Asset 46 1.png" alt="">
+                    </div>
+                    <div class="cont">
+                        <p class="desc">Balance Devices</p>
+                        <p class="num">36</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    </section>
+
+    <!-- home section ends -->
+
+
+</body>
+
+<script src="./assets/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</html>
