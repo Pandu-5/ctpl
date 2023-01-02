@@ -403,6 +403,39 @@ section {
     box-shadow: 1px 1px 4px 0px #353535;
 }
 
+.check {
+    display: flex;
+    flex-direction: row;
+}
+
+.check select {
+    box-shadow: 1px 3px 6px rgb(147, 123, 123);
+}
+
+.check input {
+    margin: 2px 4px;
+    padding: 3px 6px;
+    border: 1px solid #4f504f;
+    box-shadow: 1px 3px 6px rgb(147, 123, 123);
+}
+
+.check .serc {
+    background: #549C0B;
+    border: 1px solid #549C0B;
+    color: var(--wt);
+    border-radius: 6px;
+}
+
+.check button {
+    padding: 0px 4px;
+    background: #e41822;
+    font-size: 20px;
+    color: var(--wt);
+    border: 1px solid #e41822;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px rgb(147, 123, 123);
+}
+
 .buttonBar {
     min-height: 13vh;
     display: flex;
@@ -492,7 +525,15 @@ section {
     .header-content .search-form {
         width: 18rem;
     }
+    
 
+}
+
+@media (max-width: 680px) {
+    .check {
+        flex-direction: column;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 660px) {
