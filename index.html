@@ -2389,10 +2389,17 @@
     <section class="main">
         <div class="buttonBar">
             <button class="btn">Roll Back</button>
-            <button class="btn">check SIM validity</button>
-            <!-- <div class="check">
-
-            </div> -->
+            <button class="btn" id="checkbtn" onclick="showinput()">check SIM validity</button>
+            <div class="check" id="check">
+                <select name="" id="">
+                    <option value="">select</option>
+                    <option value="">Manufacturers</option>
+                    <option value="">Partners</option>
+                </select>
+                <input type="text" placeholder="Enter value">
+                <input type="submit" class="serc" value="search">
+                <button class="bx bx-x-circle" onclick="showinput()"></button>
+            </div>
         </div>
 
         <div class="sims">
