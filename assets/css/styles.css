@@ -35,6 +35,17 @@
     position: relative;
 }
 
+.sideBar .logo .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.sideBar .logo .profile .details {
+    padding-left: 10px;
+}
+
 .sideBar .menu-bars #btn {
     position: absolute;
     top: 50%;
@@ -128,7 +139,7 @@
     display: flex;
     align-items: center;
     margin: 4px 0;
-    padding: 10px 4px;
+    padding: 1px 4px;
     border-radius: 8px;
     text-decoration: none;
 }
@@ -142,6 +153,86 @@
     font-size: 14px;
     color: var(--wt);
 }
+
+/* link-1 */
+.content-1 {
+    margin-top: 0px;
+    display: none;
+    transition: all 0.5s ease-out;
+}
+
+/* level-1 */
+.list .nav-link-1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 4px 0px;
+    padding: 0px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.lists .nav-link-1:hover {
+    background-color: #be40f4;
+}
+
+.nav-link-1 .icon {
+    margin-right: 10px;
+    font-size: 10px;
+    color: var(--wt);
+}
+
+.nav-link-1 .link-1 {
+    font-size: 14px;
+    color: var(--wt);
+}
+
+/* level-2 */
+
+.list .nav-link-2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 4px 0px;
+    padding: 0px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.nav-link-2 .icon {
+    margin-right: 10px;
+    font-size: 10px;
+    color: var(--wt);
+}
+
+.nav-link-2 .link-1 {
+    font-size: 14px;
+    color: var(--wt);
+}
+
+/* level-3 */
+
+.list .nav-link-3 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 4px 0px;
+    padding: 0px 50px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.nav-link-3 .icon {
+    margin-right: 10px;
+    font-size: 10px;
+    color: var(--wt);
+}
+
+.nav-link-3 .link-1 {
+    font-size: 14px;
+    color: var(--wt);
+}
+
 
 .nav-link .link {
     font-size: 14px;
@@ -172,45 +263,6 @@ nav.open~.overlay {
     pointer-events: auto;
 }
 
-/* Header CSS */
-
-.header {
-    background: var(--main-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 8%;
-    border-bottom: var(--border);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.header .navbar a {
-    margin: 0 1rem;
-    font-size: 1.0rem;
-    color: #fff;
-}
-
-.header .navbar a:hover {
-    color: var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
-    padding-bottom: .5rem;
-}
-
-.header .icons div {
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.5rem;
-    margin-left: 2rem;
-    cursor: pointer;
-}
-
-
-
-
 
 
 /* TopBar CSS */
@@ -220,7 +272,7 @@ header {
     right: 0;
     top: 0;
     left: 85px;
-    z-index: 100;
+    z-index: -1;
     height: 60px;
     background: var(--wt);
     transition: left 300ms;
