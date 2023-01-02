@@ -404,7 +404,7 @@ section {
 }
 
 .check {
-    display: flex;
+    display: none;
     flex-direction: row;
 }
 
