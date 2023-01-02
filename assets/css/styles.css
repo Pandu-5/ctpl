@@ -274,7 +274,6 @@ header {
     left: 85px;
     z-index: -1;
     height: 60px;
-    background: var(--wt);
     transition: left 300ms;
 }
 
