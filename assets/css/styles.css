@@ -272,7 +272,7 @@ header {
     right: 0;
     top: 0;
     left: 85px;
-    z-index: -1;
+    z-index: 99;
     height: 60px;
     transition: left 300ms;
 }
