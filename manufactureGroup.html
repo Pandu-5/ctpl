@@ -1,0 +1,2609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/manufactureGroup.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ERP Application</title>
+</head>
+
+<body>
+
+    <!-- header starts -->
+    <header class="header">
+
+        <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+        </div>
+
+        <div class="icons">
+            <div class="bx bx-chat"></div>
+            <div class="bx bx-bell"></div>
+            <div class="hi">Hi, Sunil</div>
+            <div class="bx bx-user-circle" onclick="myprofFun()"></div>
+        </div>
+
+    </header>
+
+    <!-- header ends -->
+
+    <div class="content" id="content">
+        <div class="imgpro">
+            <img src="./assets/images/pic.png" alt="">
+        </div>
+        <div class="prodet">
+            <h4 style="font-weight: 400;">User Options</h4>
+            <div class="set1">
+                <p class="ttle">Inbox</p>
+                <i class="bx bxs-inbox"></i>
+            </div>
+            <div class="set1">
+                <p class="ttle">Profile</p>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="set1">
+                <p class="ttle">Settings</p>
+                <i class="bx bx-cog"></i>
+            </div>
+            <div class="set1">
+                <p class="ttle">Actions</p>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="set1">
+                <p class="ttle">Logout</p>
+                <i class="bx bx-log-out"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- sideBar starts -->
+    <div class="sideBar">
+
+        <div class="menu-bars">
+            <i class='bx bx-menu menu-icon' id="btn"></i>
+        </div>
+
+        <!-- visible -->
+        <ul class="nav-list">
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-calendar'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-book'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-trash-alt'></i>
+                </a>
+            </li>
+        </ul>
+
+        <!-- hidden -->
+        <div class="nav">
+            <div class="sidebar-hid">
+                <div class="logo">
+                    <i class="bx bx-menu menu-icon"></i>
+                    <div class="profile">
+                        <div class="img">
+                            <img src="./assets/images/pic.png" alt="">
+                        </div>
+                        <div class="details">
+                            <p class="wel">Welcome</p>
+                            <p class="name">Me.Sunil</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-content">
+                    <ul class="lists">
+
+                        <li class="list">
+                            <a href="#" class="nav-link collapsible">
+                                <span class="link">Device Management</span>
+                                <i class="bx bxs-down-arrow icon"></i>
+
+                                <!-- level-1 -->
+                                <div class="content-1">
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-11</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-12</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-13</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-14</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link collapsible">
+                                <span class="link">Device Management</span>
+                                <i class="bx bxs-down-arrow icon"></i>
+
+                                <!-- level-1 -->
+                                <div class="content-1">
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-11</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-12</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-13</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-14</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link collapsible">
+                                <span class="link">Device Management</span>
+                                <i class="bx bxs-down-arrow icon"></i>
+
+                                <!-- level-1 -->
+                                <div class="content-1">
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-11</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-12</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-13</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-14</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link collapsible">
+                                <span class="link">Device Management</span>
+                                <i class="bx bxs-down-arrow icon"></i>
+
+                                <!-- level-1 -->
+                                <div class="content-1">
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-11</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-12</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-13</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-14</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link collapsible">
+                                <span class="link">Device Management</span>
+                                <i class="bx bxs-down-arrow icon"></i>
+
+                                <!-- level-1 -->
+                                <div class="content-1">
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-11</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-13</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-23</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-33</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-12</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-43</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-12</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-13</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="nav-link-1 collapsible">
+                                        <span class="link-1">Menu-14</span>
+                                        <i class="bx bxs-down-arrow icon"></i>
+
+                                        <!-- level-2 -->
+                                        <div class="content-1">
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-21</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-22</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-23</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+                                            <a href="#" class="nav-link-2 collapsible">
+                                                <span class="link-1">Menu-24</span>
+                                                <i class="bx bxs-down-arrow icon"></i>
+
+                                                <div class="content-1">
+
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+                                                    <a href="#" class="nav-link-3 collapsible">
+                                                        <span class="link-1">Menu-3</span>
+                                                        <i class="bx bxs-down-arrow icon"></i>
+                                                    </a>
+
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- sideBar ends -->
+
+    <!-- Title Button Div -->
+
+    <div class="titbtn">
+        <div class="stitle">
+            <h3>My OEM Manufacturers Group</h3>
+        </div>
+        
+    </div>
+
+
+    <!-- Table Starts-->
+
+    <div class="records table-responsive">
+
+        <div class="record-header">
+            <div class="add">
+                <span>Entries</span>
+                <select name="" id="">
+                    <option value="">10</option>
+                </select>
+            </div>
+
+            <div class="browse">
+                <input type="search" placeholder="search" class="record-search">
+                <button>copy</button>
+                <button>csv</button>
+                <button>Excel</button>
+                <button>pdf</button>
+                <button>print</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="h4" style="margin-bottom: 5px; padding-left: 10px;">Showing 1 to 1 entries</div>
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>OEM Manufacturer Name</th>
+                        <th>State</th>
+                        <th>City</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            Arjun
+                        </td>
+                        <td>
+                            Telengana
+                        </td>
+                        <td>
+                            Hyderabad
+                        </td>
+                        
+                        <td>
+                            <!-- <span class="paid">Assign Royalty</span> -->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            Anil Krishna
+                        </td>
+                        <td>
+                            Kerala
+                        </td>
+                        <td>
+                            Kottayam
+                        </td>
+                        
+                        <td>
+                            <span class="paid">Assign Royalty</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            Krishna Kanth
+                        </td>
+                        <td>
+                            West Bengal
+                        </td>
+                        <td>
+                            Kolkata
+                        </td>
+                        
+                        <td>
+                            <!-- <span class="paid">Assign Royalty</span> -->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            MOhan Babu
+                        </td>
+                        <td>
+                            Andhra Pradesh
+                        </td>
+                        <td>
+                            Guntur
+                        </td>
+                        
+                        <td>
+                            <!-- <span class="paid">Assign Royalty</span> -->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            Subhash
+                        </td>
+                        <td>
+                            Madhya Pradesh
+                        </td>
+                        <td>
+                            Jabalpur
+                        </td>
+                        
+                        <td>
+                            <!-- <span class="paid">Assign Royalty</span> -->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            Aman
+                        </td>
+                        <td>
+                            Karnataka
+                        </td>
+                        <td>
+                            Banglore
+                        </td>
+                        
+                        <td>
+                            <!-- <span class="paid">Assign Royalty</span> -->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>
+                            Srikanth
+                        </td>
+                        <td>
+                            Telengana
+                        </td>
+                        <td>
+                            Hyderabad
+                        </td>
+                        
+                        <td>
+                            <span class="paid">Assign Royalty</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>
+                            Rohith
+                        </td>
+                        <td>
+                            Kerala
+                        </td>
+                        <td>
+                            Kottayam
+                        </td>
+                        
+                        <td>
+                            <!-- <span class="paid">Assign Royalty</span> -->
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pre-Nxt">
+            <button><a href="./application.html">Previous</a></button>
+            <button><a href="#">1</a></button>
+            <button><a href="#">2</a></button>
+            <button><a href="#">Next</a></button>
+        </div>
+
+    </div>
+
+    <!-- Table Ends -->
+
+
+
+
+
+</body>
+
+<script src="./assets/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</html>
