@@ -696,7 +696,7 @@ input:checked+.slider:before {
     justify-content: space-between;
     counter-reset: step;
     margin-left: 150px;
-    margin-right: 150px;
+    margin-right: 350px;
     margin-top: 90px;
 }
 
@@ -704,10 +704,10 @@ input:checked+.slider:before {
 .progress {
     content: '';
     position: absolute;
-    top: 22%;
+    top: 22.5%;
     transform: translateY(-500%);
     height: 10px;
-    width: 80%;
+    width: 63%;
     background-color: #C6A5FB;
     z-index: -1;
 }
@@ -740,20 +740,28 @@ input:checked+.slider:before {
     color: #f3f3f3;
 }
 
-@media only screen and (max-width: 1260px) {
-
+@media only screen and (max-width: 1350px) {
     .progressbar::before,
     .progress {
+        top: 24%;
+        transform: translateY(-500%);
         height: 10px;
-        width: 73%;
+        width: 59%;
+        margin-right: 100px;
+        background-color: #C6A5FB;
+        z-index: -1;
     }
+}
+
+@media only screen and (max-width: 1290px) {
 
     .progressbar::before,
     .progress {
         top: 24%;
         transform: translateY(-500%);
         height: 10px;
-        width: 73%;
+        width: 56%;
+        margin-right: 100px;
         background-color: #C6A5FB;
         z-index: -1;
     }
@@ -767,7 +775,7 @@ input:checked+.slider:before {
     .progressbar::before,
     .progress {
         height: 10px;
-        width: 70%;
+        width: 50%;
     }
 
 }
@@ -786,7 +794,7 @@ input:checked+.slider:before {
     .progressbar::before,
     .progress {
         height: 10px;
-        width: 63%;
+        width: 46%;
     }
 }
 
@@ -794,15 +802,29 @@ input:checked+.slider:before {
     .titbtn .search-form {
         width: 20rem;
     }
+    .progressbar {
+        margin-right: 200px;
+    }
+    .progressbar::before,
+    .progress {
+        height: 10px;
+        width: 60%;
+    }
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 910px) {
     .login-form .form {
         width: 40rem;
     }
     .login-form .form .main-head .cross .fa-times {
         margin-left: 8rem;
     }
+    .progressbar::before,
+    .progress {
+        height: 8px;
+        width: 56%;
+    }
+    
 }
 
 
@@ -828,7 +850,7 @@ input:checked+.slider:before {
     .progressbar::before,
     .progress {
         height: 10px;
-        width: 58%;
+        width: 50%;
     }
 
     .progress-step::after {
@@ -837,10 +859,10 @@ input:checked+.slider:before {
 
     .progressbar::before,
     .progress {
-        top: 22%;
+        top: 23%;
         transform: translateY(-500%);
         height: 8px;
-        width: 60%;
+        width: 53%;
         background-color: #C6A5FB;
     }
 
@@ -853,7 +875,8 @@ input:checked+.slider:before {
 
     .progressbar::before,
     .progress {
-        width: 53%;
+        top: 22%;
+        width: 47%;
     }
 
     .progress-step::after {
