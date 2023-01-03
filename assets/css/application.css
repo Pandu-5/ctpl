@@ -1,0 +1,1063 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #6538AE;
+    --black: #000;
+    --wt: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* sideBar CSS */
+
+.sideBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 78px;
+    background: var(--main-color);
+    padding: 6px 14px;
+    z-index: 1000;
+    transition: all 0.5s ease;
+    color: var(--wt);
+}
+
+.sideBar .menu-bars {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sideBar .logo .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.sideBar .logo .profile .details {
+    padding-left: 10px;
+}
+
+.sideBar .menu-bars #btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.sideBar i {
+    color: #fff;
+    height: 60px;
+    min-width: 50px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.sideBar .nav-list {
+    margin-top: 20px;
+    height: 100%;
+}
+
+.sideBar li {
+    position: relative;
+    margin: 8px 0;
+    list-style: none;
+}
+
+.sideBar li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.sideBar li i {
+    height: 50px;
+    line-height: 50px;
+    font-size: 23px;
+    border-radius: 12px;
+    color: var(--wt);
+}
+
+/* Hidden NavBar */
+
+.logo .menu-icon {
+    color: var(--wt);
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+
+.nav .sidebar-hid {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 260px;
+    padding: 20px 0;
+    background-color: var(--main-color);
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.nav.open .sidebar-hid {
+    left: 0;
+}
+
+.sidebar-hid .sidebar-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.sidebar-content .list {
+    list-style: none;
+}
+
+.list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    padding: 1px 4px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.lists .nav-link:hover {
+    background-color: #e540f4;
+}
+
+.nav-link .icon {
+    margin-right: 10px;
+    font-size: 14px;
+    color: var(--wt);
+}
+
+/* link-1 */
+.content-1 {
+    margin-top: 0px;
+    display: none;
+    transition: all 0.5s ease-out;
+}
+
+/* level-1 */
+.list .nav-link-1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 4px 0px;
+    padding: 0px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.lists .nav-link-1:hover {
+    background-color: #be40f4;
+}
+
+.nav-link-1 .icon {
+    margin-right: 10px;
+    font-size: 10px;
+    color: var(--wt);
+}
+
+.nav-link-1 .link-1 {
+    font-size: 14px;
+    color: var(--wt);
+}
+
+/* level-2 */
+
+.list .nav-link-2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 4px 0px;
+    padding: 0px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.nav-link-2 .icon {
+    margin-right: 10px;
+    font-size: 10px;
+    color: var(--wt);
+}
+
+.nav-link-2 .link-1 {
+    font-size: 14px;
+    color: var(--wt);
+}
+
+/* level-3 */
+
+.list .nav-link-3 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 4px 0px;
+    padding: 0px 50px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.nav-link-3 .icon {
+    margin-right: 10px;
+    font-size: 10px;
+    color: var(--wt);
+}
+
+.nav-link-3 .link-1 {
+    font-size: 14px;
+    color: var(--wt);
+}
+
+
+.nav-link .link {
+    font-size: 14px;
+    color: var(--wt);
+    font-weight: 300;
+}
+
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+    color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 1000vh;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav.open~.overlay {
+    opacity: 1;
+    left: 260px;
+    pointer-events: auto;
+}
+
+
+/* Header CSS */
+
+.header {
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 8%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.0rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header .icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.header .icons .hi {
+    font-size: 15px;
+}
+
+
+.header .logo i {
+    color: var(--main-color);
+}
+
+.content {
+    display: none;
+    z-index: 1000;
+    width: 200px;
+    flex-direction: column;
+    margin-right: 20px;
+    background: #11AE0E;
+    float: right;
+    box-shadow: 1px 3px 9px rgb(171, 169, 169);
+    transition: all 0.5 ease-in-out;
+}
+
+.content .imgpro {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    background: #C6A5FB;
+}
+
+.content .prodet {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: var(--wt);
+}
+
+.content .prodet .set1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Title Btn CSS */
+
+.titbtn {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.titbtn h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.titbtn .popbtn button {
+    border: none;
+    color: var(--wt);
+    background: #11AE0E;
+    padding: 6px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 4px rgb(200, 199, 199);
+}
+
+/* Application CSS */
+
+.records .record-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.records .record-header .browse button {
+    margin: 3px;
+    padding: 0.5px 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(212, 211, 211);
+}
+
+/* pop up CSS */
+.login-form {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.login-form .form {
+    width: 70rem;
+    height: 40rem;
+    border-radius: 20px;
+}
+
+.login-form .form .main-head .head-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--wt);
+    padding: 15px;
+}
+
+.login-form .form .main-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #be40f4;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.login-form .form .main-head .cross .fa-times {
+    position: absolute;
+    margin-left: 21rem;
+    cursor: pointer;
+    color: var(--wt);
+}
+
+.login-form .form-part {
+    border-radius: 0px 0px 20px 20px;
+    background: var(--wt);
+    overflow: hidden;
+}
+
+.login-form .form-part .level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--wt);
+    padding: 5px 10px;
+}
+
+.login-form .form-part .level .level-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form .form-part .level .level-head h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login-form .form-part .level .det {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    padding: 10px 20px;
+}
+
+.login-form .form-part .level .box input,
+.login-form .form-part .level .box select {
+    border: none;
+    border-bottom: 2px solid #bebcbc;
+    padding: 5px 5px;
+}
+
+input:focus,
+select:focus {
+    border: none;
+}
+
+.login-form .form-part .btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.login-form .form-part .btns button {
+    width: 10rem;
+    padding: 5px 12px;
+    margin: 5px 10px;
+    font-size: 15px;
+    background: #11AE0E;
+    border: 1px solid #11AE0E;
+    border-radius: 8px;
+    color: var(--wt);
+    cursor: pointer;
+}
+
+
+
+
+/* Table CSS */
+
+.table-responsive {
+    width: 94%;
+    overflow: auto;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead tr {
+    background: #6538AE;
+}
+
+tr:nth-child(even) {
+    background-color: #B18FE9;
+}
+
+tr:nth-child(odd) {
+    background-color: #C6A5FB;
+}
+
+table thead th {
+    padding: 10px 3px;
+    text-align: center;
+    color: var(--wt);
+    font-size: 1rem;
+    background: #6538AE;
+    font-weight: 400;
+    border: 0.8px solid rgb(115, 115, 115);
+}
+
+table thead th:first-child {
+    padding-left: 1rem;
+}
+
+table tbody td {
+    padding: 4px 5px;
+    color: #444;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 400;
+    border: 1px solid #ddd;
+}
+
+table tbody td:first-child {
+    padding-left: 1rem;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+
+/* Switch CSS */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 1.5px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #6538AE;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #6538AE;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.titbtn .search-form {
+    background: #C6A5FB;
+    width: 30rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    transform-origin: top;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 0px #353535;
+}
+
+.titbtn .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: .8rem;
+    border: none;
+    background: #C6A5FB;
+    padding: 1rem;
+    text-transform: none;
+}
+
+.titbtn .search-form label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+    color: var(--wt);
+}
+
+.titbtn .search-form {
+    width: 30rem;
+    margin-right: 5px;
+}
+
+.titbtn .newbtn {
+    display: flex;
+    margin: 5px;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.actions span {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: .8rem;
+}
+
+.paid {
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    background: #d6ec56;
+    padding: .5rem 0.6rem;
+    border-radius: 15px;
+    font-size: .7rem;
+}
+
+.pre-Nxt {
+    margin: 15px;
+}
+
+.pre-Nxt button a{
+    padding: 2px 6px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.pre-Nxt button a:hover {
+    color: var(--wt);
+}
+
+.pre-Nxt button:hover {
+    background-color: #444;
+    border: 1px solid #444;
+    color: var(--wt);
+}
+
+
+/* Levels CSS */
+.progressbar {
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 90px;
+}
+
+.progressbar::before,
+.progress {
+    content: '';
+    position: absolute;
+    top: 22%;
+    transform: translateY(-500%);
+    height: 10px;
+    width: 80%;
+    background-color: #C6A5FB;
+    z-index: -1;
+}
+
+.progress-step {
+    width: 75px;
+    height: 75px;
+    background-color: #C6A5FB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 24%;
+    font-size: 0.9rem;
+    color: #2a2a2b;
+}
+
+.progress-step-active {
+    background-color: #6538AE;
+    color: #f3f3f3;
+}
+
+@media only screen and (max-width: 1260px) {
+
+    .progressbar::before,
+    .progress {
+        height: 10px;
+        width: 73%;
+    }
+
+    .progressbar::before,
+    .progress {
+        top: 24%;
+        transform: translateY(-500%);
+        height: 10px;
+        width: 73%;
+        background-color: #C6A5FB;
+        z-index: -1;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1131px) {
+
+    .progressbar::before,
+    .progress {
+        height: 10px;
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+    .login-form .form {
+        width: 60rem;
+    }
+    .login-form .form .main-head .cross .fa-times {
+        margin-left: 16rem;
+    }
+}
+
+@media only screen and (max-width: 1012px) {
+
+    .progressbar::before,
+    .progress {
+        height: 10px;
+        width: 63%;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .titbtn .search-form {
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .login-form .form {
+        width: 40rem;
+    }
+    .login-form .form .main-head .cross .fa-times {
+        margin-left: 8rem;
+    }
+}
+
+
+@media (max-width: 847px) {
+
+    .sideBar {
+        width: 70px;
+    }
+
+    .titbtn {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .titbtn .search-form {
+        margin-bottom: 10px;
+    }
+
+    .titbtn .popbtn {
+        margin: 6px;
+    }
+
+    .progressbar::before,
+    .progress {
+        height: 10px;
+        width: 58%;
+    }
+
+    .progress-step::after {
+        font-size: 0.7rem;
+    }
+
+    .progressbar::before,
+    .progress {
+        top: 22%;
+        transform: translateY(-500%);
+        height: 8px;
+        width: 60%;
+        background-color: #C6A5FB;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    table {
+        width: 900px;
+    }
+
+    .progressbar::before,
+    .progress {
+        width: 53%;
+    }
+
+    .progress-step::after {
+        font-size: 0.6rem;
+    }
+
+    .progress-step {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 657px) {
+    .progressbar {
+        margin-left: 110px;
+        margin-right: 110px;
+        margin-top: 90px;
+    }
+
+    .progressbar::before,
+    .progress {
+        width: 60%;
+    }
+
+    .login-form .form {
+        width: 25rem;
+    }
+    .login-form .form .main-head .cross .fa-times {
+        margin-left: 0.5rem;
+    }
+    .login-form .form-part .level .det {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 627px) {
+
+    .titbtn {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .progressbar::before,
+    .progress {
+        width: 63%;
+    }
+
+    .titbtn .stitle {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 585px) {
+
+    .progressbar::before,
+    .progress {
+        width: 63%;
+    }
+
+    .progressbar {
+        margin-left: 110px;
+        margin-right: 50px;
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .records .record-header {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .table-responsive {
+        margin-left: 75px;
+    }
+
+    .titbtn {
+        margin-left: 55px;
+    }
+
+    .header .logo i {
+        display: none;
+    }
+
+    .header .icons .hi {
+        font-size: 20px;
+    }
+
+    .titbtn .search-form {
+        width: 15rem;
+    }
+
+
+    .progressbar {
+        margin-left: 110px;
+        margin-right: 20px;
+        margin-top: 90px;
+    }
+
+    .progress-step::after {
+        top: 22%;
+    }
+
+}
+
+@media (max-width: 445px) {
+
+    .progressbar::before,
+    .progress {
+        width: 68%;
+    }
+
+    .progress-step {
+        width: 40px;
+        height: 40px;
+    }
+
+    .progressbar {
+        margin-left: 80px;
+        margin-top: 90px;
+    }
+
+    .progressbar::before,
+    .progress {
+        top: 19%;
+        transform: translateY(-500%);
+        height: 6px;
+        background-color: #C6A5FB;
+    }
+
+    .progress-step::after {
+        top: 20%;
+    }
+    .login-form .form {
+        width: 19rem;
+    }
+    .login-form .form .main-head .cross .fa-times {
+        margin-left: -1rem;
+    }
+    .login-form .form .main-head .head-part h3 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .login-form .form .main-head .head-part h4 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 408px) {
+    .titbtn .newbtn {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 388px) {
+    .sideBar {
+        width: 60px;
+        padding: 5px 8px;
+    }
+
+    .content {
+        margin-top: 70px;
+    }
+
+    .titbtn .search-form {
+        width: 13rem;
+    }
+
+    .progressbar::before,
+    .progress {
+        width: 72%;
+    }
+
+    .progress-step::after {
+        top: 20%;
+        /* font-size: 0.9rem; */
+    }
+
+}
+
+@media (max-width: 388px) {
+    .progressbar {
+        margin-left: 80px;
+        margin-right: -10px;
+        margin-top: 90px;
+    }
+
+    .progressbar::before,
+    .progress {
+        top: 19%;
+        transform: translateY(-500%);
+        height: 6px;
+        background-color: #C6A5FB;
+    }
+}
