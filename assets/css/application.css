@@ -144,7 +144,10 @@
     text-decoration: none;
 }
 
-.lists .nav-link:hover {
+.lists .nav-link:hover,
+.lists .nav-link-1:hover,
+.lists .nav-link-2:hover,
+.lists .nav-link-3:hover {
     background-color: #e540f4;
 }
 
@@ -353,7 +356,7 @@ nav.open~.overlay {
     justify-content: space-between;
     padding: 25px;
     margin-left: 80px;
-    margin-top: 60px;
+    margin-top: 60px
 }
 
 .titbtn h3 {
@@ -672,7 +675,7 @@ input:checked+.slider:before {
     margin: 15px;
 }
 
-.pre-Nxt button a{
+.pre-Nxt button a {
     padding: 2px 6px;
     text-decoration: none;
     color: #000;
@@ -691,140 +694,113 @@ input:checked+.slider:before {
 
 
 /* Levels CSS */
-.progressbar {
-    display: flex;
-    justify-content: space-between;
-    counter-reset: step;
-    margin-left: 150px;
-    margin-right: 350px;
-    margin-top: 90px;
+
+#progressbar {
+    margin-top: 100px;
+    margin-left: 110px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
 }
 
-.progressbar::before,
-.progress {
-    content: '';
-    position: absolute;
-    top: 22.5%;
-    transform: translateY(-500%);
-    height: 10px;
-    width: 63%;
-    background-color: #C6A5FB;
-    z-index: -1;
+#progressbar .active {
+    color: #673AB7
 }
 
-.progress-step {
-    width: 75px;
-    height: 75px;
-    background-color: #C6A5FB;
-    border-radius: 50%;
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 20%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    content: "1"
+}
+
+#progressbar #personal:before {
+    content: "2"
+}
+
+#progressbar #payment:before {
+    content: "3"
+}
+
+#progressbar #confirm:before {
+    content: "4"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 4px
 }
 
-.progress-step::before {
-    counter-increment: step;
-    content: counter(step);
-}
-
-.progress-step::after {
-    content: attr(data-title);
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: lightgray;
     position: absolute;
-    top: 24%;
-    font-size: 0.9rem;
-    color: #2a2a2b;
+    left: 0;
+    top: 25px;
+    z-index: -1
 }
 
-.progress-step-active {
-    background-color: #6538AE;
-    color: #f3f3f3;
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #673AB7
 }
 
-@media only screen and (max-width: 1350px) {
-    .progressbar::before,
-    .progress {
-        top: 24%;
-        transform: translateY(-500%);
-        height: 10px;
-        width: 59%;
-        margin-right: 100px;
-        background-color: #C6A5FB;
-        z-index: -1;
-    }
+.progress {
+    height: 20px
 }
 
-@media only screen and (max-width: 1290px) {
-
-    .progressbar::before,
-    .progress {
-        top: 24%;
-        transform: translateY(-500%);
-        height: 10px;
-        width: 56%;
-        margin-right: 100px;
-        background-color: #C6A5FB;
-        z-index: -1;
-    }
+.progress-bar {
+    background-color: #673AB7
 }
 
 
-
-
-@media only screen and (max-width: 1131px) {
-
-    .progressbar::before,
-    .progress {
-        height: 10px;
-        width: 50%;
-    }
-
-}
 
 @media only screen and (max-width: 1050px) {
     .login-form .form {
         width: 60rem;
     }
+
     .login-form .form .main-head .cross .fa-times {
         margin-left: 16rem;
     }
 }
 
-@media only screen and (max-width: 1012px) {
-
-    .progressbar::before,
-    .progress {
-        height: 10px;
-        width: 46%;
-    }
-}
 
 @media only screen and (max-width: 998px) {
     .titbtn .search-form {
         width: 20rem;
     }
-    .progressbar {
-        margin-right: 200px;
-    }
-    .progressbar::before,
-    .progress {
-        height: 10px;
-        width: 60%;
-    }
+
 }
 
 @media only screen and (max-width: 910px) {
     .login-form .form {
         width: 40rem;
     }
+
     .login-form .form .main-head .cross .fa-times {
         margin-left: 8rem;
     }
-    .progressbar::before,
-    .progress {
-        height: 8px;
-        width: 56%;
-    }
-    
+
+
 }
 
 
@@ -847,24 +823,6 @@ input:checked+.slider:before {
         margin: 6px;
     }
 
-    .progressbar::before,
-    .progress {
-        height: 10px;
-        width: 50%;
-    }
-
-    .progress-step::after {
-        font-size: 0.7rem;
-    }
-
-    .progressbar::before,
-    .progress {
-        top: 23%;
-        transform: translateY(-500%);
-        height: 8px;
-        width: 53%;
-        background-color: #C6A5FB;
-    }
 
 }
 
@@ -873,40 +831,18 @@ input:checked+.slider:before {
         width: 900px;
     }
 
-    .progressbar::before,
-    .progress {
-        top: 22%;
-        width: 47%;
-    }
-
-    .progress-step::after {
-        font-size: 0.6rem;
-    }
-
-    .progress-step {
-        width: 60px;
-        height: 60px;
-    }
 }
 
 @media (max-width: 657px) {
-    .progressbar {
-        margin-left: 110px;
-        margin-right: 110px;
-        margin-top: 90px;
-    }
-
-    .progressbar::before,
-    .progress {
-        width: 60%;
-    }
 
     .login-form .form {
         width: 25rem;
     }
+
     .login-form .form .main-head .cross .fa-times {
         margin-left: 0.5rem;
     }
+
     .login-form .form-part .level .det {
         display: flex;
         align-items: center;
@@ -922,30 +858,12 @@ input:checked+.slider:before {
         flex-direction: column;
     }
 
-    .progressbar::before,
-    .progress {
-        width: 63%;
-    }
-
     .titbtn .stitle {
         margin-bottom: 10px;
     }
 
 }
 
-@media only screen and (max-width: 585px) {
-
-    .progressbar::before,
-    .progress {
-        width: 63%;
-    }
-
-    .progressbar {
-        margin-left: 110px;
-        margin-right: 50px;
-        margin-top: 90px;
-    }
-}
 
 @media only screen and (max-width: 585px) {
     .records .record-header {
@@ -979,65 +897,45 @@ input:checked+.slider:before {
     }
 
 
-    .progressbar {
-        margin-left: 110px;
-        margin-right: 20px;
-        margin-top: 90px;
-    }
-
-    .progress-step::after {
-        top: 22%;
-    }
-
 }
 
 @media (max-width: 445px) {
 
-    .progressbar::before,
-    .progress {
-        width: 68%;
-    }
-
-    .progress-step {
-        width: 40px;
-        height: 40px;
-    }
-
-    .progressbar {
-        margin-left: 80px;
-        margin-top: 90px;
-    }
-
-    .progressbar::before,
-    .progress {
-        top: 19%;
-        transform: translateY(-500%);
-        height: 6px;
-        background-color: #C6A5FB;
-    }
-
-    .progress-step::after {
-        top: 20%;
-    }
     .login-form .form {
         width: 19rem;
     }
+
     .login-form .form .main-head .cross .fa-times {
         margin-left: -1rem;
     }
+
     .login-form .form .main-head .head-part h3 {
         font-size: 16px;
         font-weight: 500;
     }
+
     .login-form .form .main-head .head-part h4 {
         font-size: 12px;
         font-weight: 400;
     }
 }
 
-@media (max-width: 408px) {
+@media (max-width: 412px) {
     .titbtn .newbtn {
         flex-direction: column;
+    }
+
+    #progressbar {
+        margin-top: 100px;
+        margin-left: 90px;
+        margin-right: -50px;
+        margin-bottom: 30px;
+    }
+
+    #progressbar li:before {
+        width: 40px;
+        height: 40px;
+        line-height: 55px;
     }
 
 }
@@ -1057,30 +955,4 @@ input:checked+.slider:before {
         width: 13rem;
     }
 
-    .progressbar::before,
-    .progress {
-        width: 72%;
-    }
-
-    .progress-step::after {
-        top: 20%;
-        /* font-size: 0.9rem; */
-    }
-
-}
-
-@media (max-width: 388px) {
-    .progressbar {
-        margin-left: 80px;
-        margin-right: -10px;
-        margin-top: 90px;
-    }
-
-    .progressbar::before,
-    .progress {
-        top: 19%;
-        transform: translateY(-500%);
-        height: 6px;
-        background-color: #C6A5FB;
-    }
 }
