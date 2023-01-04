@@ -722,6 +722,7 @@ input:focus {
     }
     .login-form .form-part .level .box label {
         font-size: 15px;
+        margin-right: 1rem;
     }
 
 
