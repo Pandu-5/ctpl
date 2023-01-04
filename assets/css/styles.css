@@ -724,6 +724,12 @@ input:focus {
         font-size: 15px;
         margin-right: 1rem;
     }
+    .login-form .form-part {
+        padding: 2px;
+    }
+    .login-form .form-part .level .box label {
+        font-size: 10px;
+    }
 
 
 }
