@@ -2384,6 +2384,50 @@
 
     <!-- topbar ends -->
 
+    <!-- pop-up starts -->
+    <div class="login-form" id="login-form">
+        <div class="form">
+            <div class="main-head">
+                <div class="head-part">
+                    <h3>Validity Details</h3>
+                </div>
+            </div>
+
+            <div class="form-part">
+              
+                <!-- Login Details Starts -->
+                <div class="level">
+                    <div class="det">
+                        <div class="box">
+                            <label for="">Activation Type</label>
+                            <input type="text" >
+                        </div>
+                        <div class="box">
+                            <label for="">Start Date</label>
+                            <input type="text" >
+                        </div>
+                        <div class="box">
+                            <label for="">ICCID No.</label>
+                            <input type="text" >
+                        </div>
+                        <div class="box">
+                            <label for="">End Date</label>
+                            <input type="text" >
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Login Details ends -->
+
+                <div class="btns">
+                    <button onclick="popup()">close</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <!-- home section starts -->
 
     <section class="main">
@@ -2397,7 +2441,7 @@
                     <option value="">Partners</option>
                 </select>
                 <input type="text" placeholder="Enter value">
-                <input type="submit" class="serc" value="search">
+                <input type="submit" class="serc" value="search" style="cursor: pointer;" onclick="popup()">
                 <button class="bx bx-x-circle" onclick="showinput()"></button>
             </div>
         </div>
