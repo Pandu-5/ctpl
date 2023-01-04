@@ -497,6 +497,109 @@ section {
 }
 
 
+/* pop up CSS */
+.login-form {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.login-form .form {
+    width: 45rem;
+    height: 40rem;
+    border-radius: 20px;
+}
+
+.login-form .form .main-head .head-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--wt);
+    padding: 15px;
+}
+
+.login-form .form .main-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #850CDF;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.login-form .form-part {
+    border-radius: 0px 0px 20px 20px;
+    background: var(--wt);
+    overflow: hidden;
+    padding: 10px;
+}
+
+.login-form .form-part .level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--wt);
+    padding: 15px 15px;
+}
+
+.login-form .form-part .level .level-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form .form-part .level .level-head h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login-form .form-part .level .det {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    padding: 10px 20px;
+}
+
+.login-form .form-part .level .box input {
+    border: 2px solid #bebcbc;
+    padding: 5px 5px;
+}
+
+.login-form .form-part .level .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+input:focus {
+    border: none;
+}
+
+.login-form .form-part .btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.login-form .form-part .btns button {
+    width: 10rem;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    font-size: 15px;
+    background: #F63333;
+    border: 1px solid #F63333;
+    border-radius: 8px;
+    color: var(--wt);
+    cursor: pointer;
+}
+
 
 
 
@@ -529,6 +632,12 @@ section {
     }
     
 
+}
+
+@media (max-width: 755px) {
+    .login-form .form {
+        width: 25rem;
+    }
 }
 
 @media (max-width: 680px) {
@@ -604,6 +713,16 @@ section {
         height: 150px;
         flex-direction: column;
     }
+    .login-form .form {
+        width: 20rem;
+    }
+    .login-form .form-part .level .box input {
+        border: 2px solid #bebcbc;
+        padding: 3px 3px;
+    }
+    .login-form .form-part .level .box label {
+        font-size: 15px;
+    }
 
 
 }
@@ -616,6 +735,22 @@ section {
 
     .sims .boxes .box {
         height: 200px;
+    }
+
+    .login-form .form-part {
+        padding: 2px;
+    }
+
+    .login-form .form-part .level .box input {
+        padding: 3px 3px;
+    }
+
+    .login-form .form {
+        width: 18rem;
+    }
+
+    .login-form .form-part .level .box label {
+        font-size: 10px;
     }
 
 
